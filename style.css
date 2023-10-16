@@ -63,7 +63,8 @@ html,body{
 
 
 .card-body img:hover{
-    transform: scale(1);
+    transition: all ease-in-out .45s;
+    transform: scale(1.1);
 }
 
 #product{
@@ -88,4 +89,24 @@ html,body{
       position: absolute;
       z-index: -1;
       transform: translate(-3%,0);
+  }
+
+
+  footer{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(17, 94, 238);
+    color: #fff;
+  }
+  .nav-links{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    padding: 8px 19px;
+    border-radius: 4px;
+  }
+
+  .nav-links:hover{
+    background-color: rgb(1, 67, 189);
+    color: #fff;
   }
