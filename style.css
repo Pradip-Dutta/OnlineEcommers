@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+.heading{
+    position: relative;
+}
+.heading h2::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: skyblue;
+}
+.head{
+    text-align: center;
+    padding-top: 25px;
+}
+.navbar{
+    z-index: 999;
+}
+
+.navbar-brand h1{
+    color: rgb(5, 98, 238);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.nav-link{
+    font-size: 18px;
+}
+
+.nav-link:hover{
+    /* color: green; */
+    font-weight: 500;
+}
+
+#hero{
+    background-image: url('./src/pexels-cottonbro-studio-5120185.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 90vh;
+}
+
+.hero-btn{
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: rgb(17, 94, 238);
+}
+
+.hero-btn:hover{
+    background-color: rgb(3, 69, 161);
+}
+
+
+.card-body img:hover{
+    transform: scale(1);
+}
+
+#product{
+    padding: 5% 0;
+}
+
+/*  */
+
+.highlight-word {
+    position: relative;
+    z-index: 0;
+  /* prevent the highlight from breaking since it is horizontal   */
+    white-space: nowrap;
+  }
+  .highlight-word:before {
+      content: '';
+      background: url(https://cdn2.hubspot.net/hubfs/1951809/text-highlight.png?t=1542708765973) no-repeat center center;
+      background-size: 100% auto;
+      width: 108%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      transform: translate(-3%,0);
+  }
